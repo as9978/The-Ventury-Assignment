@@ -5,7 +5,7 @@ export const getJoke = () =>
   useQuery<IResponse>("joke", async () => {
     try {
       const { data } = await axios.get<IResponse>(
-        "http://api.icndb.com/jokes/random"
+        "https://api.icndb.com/jokes/random"
       );
 
       return data;
